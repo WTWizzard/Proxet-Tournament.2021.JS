@@ -58,10 +58,8 @@ export const generateTeams = (filePath: string): Teams => {
         playersByVehicleType[`type${i + 1}` as keyof PlayerArr].pop();
       if (j % 2 === 0) {
         teams.team2.push(player?.name || "");
-        console.log(player);
       } else {
         teams.team1.push(player?.name || "");
-        console.log(player);
       }
     }
   }
